@@ -10,23 +10,26 @@ $(document).ready(function(){
 $('.well').css("background", "grey");
 
 
-$('#firstRow a').click(function() {
-   var self=this;
-    $('#firstRow a').addClass("enemy");
-    $(this).addClass("character");
 
-    $('#firstRow a').detach().appendTo("#secondRow");
-    $(this).detach().appendTo("#firstRow");
-     $('#secondRow a').removeClass("character");
+$('#firstRow a').click(function(event) {
+event.stopPropagation();
+var self = $(this);
+   $(this).addClass("character");
+   $('#firstRow a').addClass("enemy");
+   $(this).removeClass("enemy");
+   $(".btn.enemy").detach().appendTo("#secondRow");
 
+  
 
-
-$('#secondRow a').on("click",function() {
-
-     $(self).detach().appendTo("#thirdRow");
-     $(self).addClass("defender");
-
-    });
+$('#secondRow a').click(function(event) {
+   
+    event.stopPropagation();
+    $(this).addClass("defender");
+    $(this).removeClass("enemy");
+    $(this).removeClass("character");
+    $(".btn.defender").detach().appendTo("#thirdRow");
+    $(".btn.character.enemy").detach().appendTo("#firstRow");
+ });
 });
 
 //$('.btn-danger').on("click", function() {
@@ -43,19 +46,20 @@ var counterAttack = [10, 30,5,20];
 var counter=0
 
 
- 
+
  
  for(var i = 0; i < hp.length; i++) {
-    //var playerPick = $('a:first');
-    //console.log(playerPick.attr('data-num', hp[i]));
- 
+    console.log(hp[i]);
+}
 
-    };
+     //$("#char1").attr('data-num', hp[i]);
+     //$("#char2").attr('data-num', hp[i]);
+    //console.log($("#char1").text(hp[i]));
+   
 
-$('#char1').data(hp[0]);
-$('#char2').data(hp[1]);
-$('#char3').data(hp[2]);
-$('#char4').data(hp[3]);
+    //});
+
+
 
 
 
