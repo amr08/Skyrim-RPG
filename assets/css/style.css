@@ -6,6 +6,7 @@
   background-color: black;
   text-align: center;
   width: 40%;
+  margin-bottom: 30px;
 
  
  }
@@ -24,21 +25,35 @@ background-size: cover;
 	background-repeat: no-repeat;
 
 
-
-
 }
 
- img {
+img {
  	height: 150px;
  	width: 200px;
 
  }
 
+ a p {
+	color: white;
+}
 
 
+.well {
+	height: 50px;
+	margin: auto;
+	width: 50%;
+	text-align: center;
+
+}
+
+
+#well1 {
+    width: 25%;
+	
+
+}
 .containerStyle {
  	
-	border: 2px solid white;
 	margin: 20px;
 	
 	
@@ -56,7 +71,5 @@ background-size: cover;
 	background-color: grey;
 }
 
-#styleWell {
-	width: 50%;
-	margin: 0 auto;
-}
+
+
