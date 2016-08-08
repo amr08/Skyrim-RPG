@@ -1,0 +1,62 @@
+
+ 
+
+ header {
+ 	height: 160px;
+  background-color: black;
+  text-align: center;
+  width: 40%;
+
+ 
+ }
+
+header h1 {
+	color: white;
+	font-size: 40px;
+	text-align: left;
+	padding-top: 25px
+}
+
+
+body {
+	background-image: url("https://staticdelivery.nexusmods.com/mods/110/images/53977-1-1399923376.jpg");
+background-size: cover;
+	background-repeat: no-repeat;
+
+
+
+
+}
+
+ img {
+ 	height: 150px;
+ 	width: 200px;
+
+ }
+
+
+
+.containerStyle {
+ 	
+	border: 2px solid white;
+	margin: 20px;
+	
+	
+ }
+
+.enemy {
+	background-color: red;
+}
+
+.character {
+	background-color: green;
+}
+
+.defender {
+	background-color: grey;
+}
+
+#styleWell {
+	width: 50%;
+	margin: 0 auto;
+}
