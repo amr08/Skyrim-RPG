@@ -35,27 +35,27 @@ $('#secondRow a').click(function(event) {
 
 var char1 = {
 
-    hp: 150,
+    hp: 120,
     attackPower: 20,
     counterAttack: 15,
 }
 
 
 var char2 = {
-    hp: 200,
+    hp: 100,
     attackPower: 10,
     counterAttack: 25,
 
 }
 
 var char3 = {
-    hp: 170,
+    hp: 150,
     attackPower: 30,
     counterAttack: 5,
 }
 
 var char4 = {
-    hp: 160,
+    hp: 180,
     attackPower: 35,
     counterAttack: 20,
 };
@@ -83,18 +83,18 @@ var char4 = {
 //char 1 & char 2
 function battleOne() {
 
-               $("#char1 p").text("HP " + (char1.hp - char2.attackPower));
-               $("#char2 p").text("HP " + (char2.hp - char1.attackPower));
+               $("#char1 p").text("HP " + (char1.hp - char2.counterAttack));
+               $("#char2 p").text("HP " + (char2.hp - char1.attackPower)); //check this
                  
                  if ($("#firstRow a").is("#char1")) {
                     
-                    $(".battleStats").text("You attacked dragon for " + char1.attackPower + " damage. Dragon attacked you back for " + char2.attackPower + " damage");
+                    $(".battleStats").text("You attacked dragon for " + char1.attackPower + " damage. Dragon attacked you back for " + char2.counterAttack + " damage");
 
                      }
 
                  else  {
                 
-                        $(".battleStats").text("You attacked Khajiit for " + char2.attackPower + " damage. Khajiit attacked you back for " + char1.attackPower + " damage");
+                        $(".battleStats").text("You attacked Khajiit for " + char2.attackPower + " damage. Khajiit attacked you back for " + char1.counterAttack + " damage");
                      }
 
 };
@@ -175,7 +175,7 @@ function battleFive() {
 
 };
 
-//char 
+//char 3 & char 4
 function battleSix() {
 
                $("#char3 p").text("HP " + (char3.hp - char4.attackPower));
@@ -201,6 +201,7 @@ function battleSix() {
 //Battle Button Clicks
 
 $('.btn-danger').on("click", function() {
+    console.log("running on click");
 //char1 & char2
     if (($("#firstRow a").is("#char1") || $("#thirdRow a").is("#char1")) && ($("#firstRow a").is("#char2") || $("#thirdRow a").is("#char2"))) {
        battleOne();
@@ -219,8 +220,6 @@ $('.btn-danger').on("click", function() {
        battleThree();
 
     }
-
-    
 
 
 //char2 & char3
