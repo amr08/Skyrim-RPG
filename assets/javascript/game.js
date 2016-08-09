@@ -1,10 +1,5 @@
 
 
-//HP
-
-//attachPower
-
-//counterAttackPower
 $(document).ready(function(){
 
 $('.well').css("background", "grey");
@@ -207,51 +202,49 @@ function battleSix() {
 
 $('.btn-danger').on("click", function() {
 //char1 & char2
-    if ((char1 === $(".btn.character") || $(".btn.defender")) && (char2 === $("btn.defender") || $(".btn.character"))) {
+    if (($("#firstRow a").is("#char1") || $("#thirdRow a").is("#char1")) && ($("#firstRow a").is("#char2") || $("#thirdRow a").is("#char2"))) {
        battleOne();
    
-    };
+   }
 
-
-
+    
 //char1 & char3
-    if ((char1 === $(".btn.character") || $(".btn.defender")) && (char3 === $("btn.defender") || $(".btn.character"))) {
+    if (($("#firstRow a").is("#char1") || $("#thirdRow a").is("#char1")) && ($("#firstRow a").is("#char3") || $("#thirdRow a").is("#char3"))) {
        battleTwo();
 
-    };
+    }
 
-
-
-//char1 & char3
-    if ((char1 === $(".btn.character") || $(".btn.defender")) && (char4 === $("btn.defender") || $(".btn.character"))) {
+//char1 & char4
+     if (($("#firstRow a").is("#char1") || $("#thirdRow a").is("#char1")) && ($("#firstRow a").is("#char4") || $("#thirdRow a").is("#char4"))) {
        battleThree();
 
-    };
-
-   
-
-//char2 & char3
-
-    if ((char2 === $(".btn.character") || $(".btn.defender")) && (char3 === $("btn.defender") || $(".btn.character"))) {
-       battleFour();
-
-    };
-
-
-
-//char2 & char4
-    if ((char2 === $(".btn.character") || $(".btn.defender")) && (char4 === $("btn.defender") || $(".btn.character"))) {
-       battleFive();
-
-    };
+    }
 
     
 
-//char3 & char4
-    if ((char3 === $(".btn.character") || $(".btn.defender")) && (char4 === $("btn.defender") || $(".btn.character"))) {
+
+//char2 & char3
+
+    if (($("#firstRow a").is("#char2") || $("#thirdRow a").is("#char2")) && ($("#firstRow a").is("#char3") || $("#thirdRow a").is("#char3"))) {
+       battleFour();
+
+    }
+
+
+//char2 & char4
+     if (($("#firstRow a").is("#char2") || $("#thirdRow a").is("#char2"))&& ($("#firstRow a").is("#char4")|| $("#thirdRow a").is("#char4"))) {
+       battleFive();
+
+    }
+
+    
+//char3 & char4 Works!!!!
+     if (($("#firstRow a").is("#char3") || $("#thirdRow a").is("#char3")) && ($("#firstRow a").is("#char4") ||$("#thirdRow a").is("#char4"))) {
        battleSix();
 
-    };
+    }
+
+
 
 });
 
@@ -275,4 +268,3 @@ function restart() {
 
 //end
 });
-
