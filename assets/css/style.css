@@ -40,7 +40,7 @@ img {
 .well h3 {
 	color:white;
 
-	margin: 0px;
+	margin: 0%;
 
 
 }
@@ -50,7 +50,7 @@ img {
 	margin: 0 auto;
 	width: 50%;
 	text-align: center;
-	height: 50px;
+	min-height: 20%;
 
 
 
@@ -84,6 +84,5 @@ img {
 .defender {
 	background-color: grey;
 }
-
 
 
