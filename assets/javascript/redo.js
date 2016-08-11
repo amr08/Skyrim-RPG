@@ -70,7 +70,7 @@ defender.push(userCharacter2);
 				battleTwo();
 			}
 
-			if (($("#char3").is(character1)) && ($("#char1").is(defender))) {
+			if (($("#char3").is(character1)) && (guy.hp === 156) && ($("#char1").is(defender))) {
 				console.log("works4");
 				battleTwo();
 			}
@@ -98,7 +98,7 @@ defender.push(userCharacter2);
 
 			//bsttle 5
 
-			if (($("#char2").is(character1)) && ($("#char4").is(defender))) {
+			if (($("#char2").is(character1)) && (dragon.hp === 202) && ($("#char4").is(defender))) {
 				console.log("works9");
 			}
 
@@ -140,12 +140,13 @@ function battleOne() {
      if ($("#char1").is(character1)) {
                     
          $(".battleStats").text("You attacked dragon for " + (khajiit.attackPower)++ *4  + " damage. Dragon attacked you back for " + dragon.counterAttack + " damage");
-
+           
         }
 
     else  {
                 
              $(".battleStats").text("You attacked Khajiit for " + (dragon.attackPower)++ *6  + " damage. khajiit attacked you back for " + khajiit.counterAttack + " damage");
+        
         }
 
 
@@ -181,12 +182,13 @@ function battleTwo() {
                  if ($("#char1").is(character1)) {
                     
                     $(".battleStats").text("You attacked some dude for " + (khajiit.attackPower)++ *4 + " damage. Guy attacked you back for " + guy.counterAttack + " damage");
-
+                       
                      }
 
                  else  {
                 
                         $(".battleStats").text("You attacked khajiit for " + (guy.attackPower)++ *2 + " damage. Khajiit attacked you back for " + khajiit.counterAttack + " damage");
+                   
                      }
 
 
@@ -220,7 +222,7 @@ function battleTwo() {
 var khajiit = {
 
     hp: 119,
-    attackPower: 4,
+    attackPower: 1,
     counterAttack: 15,
 }
 
@@ -228,20 +230,20 @@ var khajiit = {
 
 var dragon = {
     hp: 202,
-    attackPower: 6,
+    attackPower: 1,
     counterAttack: 25,
 
 }
 
 var  guy= {
     hp: 156,
-    attackPower: 2,
+    attackPower: 1,
     counterAttack: 20,
 }
 
 var assassin = {
     hp: 187,
-    attackPower: 10,
+    attackPower: 1,
     counterAttack: 20,
 };
 
@@ -263,29 +265,35 @@ $('.btn-default').on("click", function() {
 
 function rematch() {
 
+$(".rematch1").click(function() {
 
-        if (dragon.hp === 127 && $(".rematch").has(guy)) {
+	$('.btn-danger').on("click", function() {
+        // if (dragon.hp === 127 && $(".rematch").has(guy)) {
        console.log("trying to work")
-        }
         
+        $("#char2 p").text("HP " + (dragon.hp - guy.counterAttack));
+             dragon.hp = (dragon.hp-guy.counterAttack);
             
+             $(".battleStats").text("You attacked some dude for " + (dragon.attackPower)++ *4 + " damage. Some dude attacked you back for " + guy.counterAttack + " damage");
 
-          //     var nextGuess = char2.hp = (char2.hp-char3.counterAttack);
-            
-        //      $(".battleStats").text("You attacked some dude for " + char2.attackPower + " damage. Some dude attacked you back for " + char3.counterAttack + " damage");
-
-        //      }
+             
+        $("#char3 p").text("HP " + (guy.hp - dragon.counterAttack));
+                   var nextLoser = guy.hp = (guy.hp-dragon.counterAttack);
 
 
-        //  if (nextGuess <= 0 && $("#firstRow a").is("#char2")) {
-        //   $(".battleStats").text("YOU LOSE!! Click Restart to try again.");
-        //                         alert("You Lost! Click restart!");
 
-        //                         }
-        // else if (char2 <= 0) {
-        //   $(".battleStats").text("YOU LOSE!! Click Restart to try again.");
-        //                         alert("You Lost! Click restart!");
-        //  }                   
+
+          if (dragon.hp == -13) {
+               $(".battleStats").text("You both killed each other!! Click Restart to try again.");
+                        alert("You both died!! Click restart!");
+                    
+          } 
+
+
+  
+    });                    
+
+});
 
 };
 
