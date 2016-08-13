@@ -786,43 +786,43 @@ $(".final2").click(function(event) {
 
 
 
-// function rematch4 () {
+function rematch4 () {
 
 
 
-// console.log("rematch4 working");
+console.log("rematch4 working");
 
 
-// $(".rematch4").click(function() {
+$(".rematch4").click(function() {
 
-//  $('.battleButton').on("click", function() {
+ $('.battleButton').on("click", function() {
 
-//    if (dragon.hp === 62) {
+   if (dragon.hp === 62) {
         
-//        console.log("trying to work")
+       console.log("trying to work")
         
-//         $("#char2 p").text("HP " + (dragon.hp - khajiit.counterAttack));
-//              khajiit.hp = (khajiit.hp-dragon.counterAttack);
+        $("#char2 p").text("HP " + (dragon.hp - khajiit.counterAttack));
+             khajiit.hp = (khajiit.hp-dragon.counterAttack);
             
-//              $(".battleStats").text("You attacked some dude for " + (dragon.attackPower)++ *4 + " damage. Some dude attacked you back for " + guy.counterAttack + " damage");
+             $(".battleStats").text("You attacked some dude for " + (dragon.attackPower)++ *4 + " damage. Some dude attacked you back for " + guy.counterAttack + " damage");
 
              
-//         $("#char1 p").text("HP " + (khajiit.hp - dragon.attackPower *6));
-//                    var nextLoser =khajiit.hp = (khajiit.hp-dragon.attackPower * 6);
+        $("#char1 p").text("HP " + (khajiit.hp - dragon.attackPower *6));
+                   var nextLoser =khajiit.hp = (khajiit.hp-dragon.attackPower * 6);
 
 
-//           if (dragon.hp == -23) {
-//                 $(".battleStats").text("You both killed each other!! Click Restart to try again.");
-//                         alert("You both died!! Click restart!");
+          if (dragon.hp == -23) {
+                $(".battleStats").text("You both killed each other!! Click Restart to try again.");
+                        alert("You both died!! Click restart!");
 
-//                    $("#char3").removeClass("rematch1");
-//            } 
+                   $("#char3").removeClass("rematch1");
+           } 
 
-// }
+}
   
-//           });                    
+          });                    
 
-//       });
+      });
 
 // $(".rematch44").click(function() {
 
@@ -861,11 +861,12 @@ $(".final2").click(function(event) {
 
 // function rematch6 () {
 // console.log("rematch6 working");
-// };
+ };
 
 //end
 
 });
+
 
 
 
