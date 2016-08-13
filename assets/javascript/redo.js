@@ -36,12 +36,12 @@ var userCharacter = this;
    $("#secondRow a").addClass("enemy");
 
    
-			$('#secondRow a').click(function(event) {
-			var userCharacter2 = this;
-			 
+      $('#secondRow a').click(function(event) {
+      var userCharacter2 = this;
+       
 
-			$(userCharacter2).appendTo("#thirdRow");
-			$(userCharacter2).removeClass("character enemy").addClass("defender");
+      $(userCharacter2).appendTo("#thirdRow");
+      $(userCharacter2).removeClass("character enemy").addClass("defender");
 
 
 
@@ -50,141 +50,141 @@ defender.push(userCharacter2);
 
 
 
-	//Battle Button
+  //Battle Button
 
   $('.btn-danger').on("click", function() {
 
-			  
-			//battle 1
+        
+      //battle 1
 
-			if (($("#char1").is(character1)) && ($("#char2").is(defender))) {
-				
-				battleOne();
-			
-			}
+      if (($("#char1").is(character1)) && ($("#char2").is(defender))) {
+        
+        battleOne();
+      
+      }
 
-			if (($("#char2").is(character1)) && ($("#char1").is(defender))) {
-				
-				battleOne();
-			}
+      if (($("#char2").is(character1)) && ($("#char1").is(defender))) {
+        
+        battleOne();
+      }
 
                     //rematch
-             		   if (dragon.hp === 127 && wins === 1) {
-            			rematch();
-						}
+                   if (dragon.hp === 127 && wins === 1) {
+                  rematch();
+            }
 
-			//battle 2
+      //battle 2
 
-			if (($("#char1").is(character1)) && ($("#char3").is(defender))) {
-				console.log("works3");
-				battleTwo();
-			}
+      if (($("#char1").is(character1)) && ($("#char3").is(defender))) {
+        console.log("works3");
+        battleTwo();
+      }
 
-			if (($("#char3").is(character1)) && (guy.hp === 156, 141)  && ($("#char1").is(defender))) {
-				console.log("works4");
-				battleTwo();
-			}
+      if (($("#char3").is(character1)) && (guy.hp === 156, 141)  && ($("#char1").is(defender))) {
+        console.log("works4");
+        battleTwo();
+      }
                       //rematch2
                       if (guy.hp === 66 && secondWin === 1) {
-                      	 rematch2();
+                         rematch2();
                         }
 
-			//battle 3
+      //battle 3
 
-			if (($("#char1").is(character1)) && ($("#char4").is(defender))) {
-				console.log("works5");
-				battleThree();
-			}
+      if (($("#char1").is(character1)) && ($("#char4").is(defender))) {
+        console.log("works5");
+        battleThree();
+      }
 //look at this code its where it broke
-			if (($("#char4").is(character1)) && ($("#char1").is(defender))) {
-				console.log("works6");
-				battleThree();
-			}
+      if (($("#char4").is(character1)) && ($("#char1").is(defender))) {
+        console.log("works6");
+        battleThree();
+      }
 
-			      if (assassin.hp === 97 && thirdWin === 1) {
-                      	 rematch3();
-                      	 console.log("send to rematch 3");
+            if (assassin.hp === 97 && thirdWin === 1) {
+                         rematch3();
+                         console.log("send to rematch 3");
                         }
 
-			//battle 4 
+      //battle 4 
 
-			if (($("#char2").is(character1))  && (khajiit !== $(".rematch4")) && (dragon.hp === 202, 182) && ($("#char3").is(defender))) {
-				console.log("works7");
-				battleFour();
+      if (($("#char2").is(character1))  && (khajiit !== $(".rematch4")) && (dragon.hp === 202, 182) && ($("#char3").is(defender))) {
+        console.log("works7");
+        battleFour();
 
 
-			}
+      }
 
-			 if (dragon.hp === 62 && fourthWin === 1) {
-                      	 rematch4();
-                      	 console.log("send to rematch 4");
+       if (dragon.hp === 62 && fourthWin === 1) {
+                         rematch4();
+                         console.log("send to rematch 4");
                         }
 
-			if (($("#char3").is(character1)) && (guy.hp === 156, 131) && ($("#char2").is(defender))) {
-				console.log("works8");
+      if (($("#char3").is(character1)) && (guy.hp === 156, 131) && ($("#char2").is(defender))) {
+        console.log("works8");
 
-				battleFour();
-			}
+        battleFour();
+      }
 
-			//bsttle 5
+      //bsttle 5
 
-			if (($("#char2").is(character1)) && (dragon.hp === 202, 182) && ($("#char4").is(defender))) {
-				console.log("works9");
-				battleFive();
+      // if (($("#char2").is(character1)) && (dragon.hp === 202, 182) && ($("#char4").is(defender))) {
+      //  console.log("works9");
+      //  battleFive();
 
-			}
+      // }
 
-			if (($("#char4").is(character1)) && (assassin.hp === 187, 162) && ($("#char2").is(defender))) {
-				console.log("works10");
-				battleFive();
-			}
+      // if (($("#char4").is(character1)) && (assassin.hp === 187, 162) && ($("#char2").is(defender))) {
+      //  console.log("works10");
+      //  battleFive();
+      // }
 
-			if (dragon.hp === 42 && fifthWin === 1) {
-                      	 rematch5();
-                      	 console.log("send to rematch 5");
-                        }
-			// bsttle 6
+      // if (dragon.hp === 42 && fifthWin === 1) {
+   //                      rematch5();
+   //                      console.log("send to rematch 5");
+   //                      }
+      // // bsttle 6
 
-			if (($("#char3").is(character1)) && (guy.hp === 156, 136) && ($("#char4").is(defender))) {
-		        console.log("works11");
-		        battleSix();
-			}
+      // if (($("#char3").is(character1)) && (guy.hp === 156, 136) && ($("#char4").is(defender))) {
+     //        console.log("works11");
+     //        battleSix();
+      // }
 
-			if (($("#char4").is(character1)) && (assassin.hp === 187, 161) && ($("#char3").is(defender))) {
-				console.log("works12");
-				battleSix();
-			}
+      // if (($("#char4").is(character1)) && (assassin.hp === 187, 161) && ($("#char3").is(defender))) {
+      //  console.log("works12");
+      //  battleSix();
+      // }
 
-			if (assassin.hp === 27 && winSix === 1) {
-                      	 rematch6();
-                      	 console.log("send to rematch 5");
-                      	}
+      // if (assassin.hp === 27 && winSix === 1) {
+   //                      rematch6();
+   //                      console.log("send to rematch 5");
+   //                     }
 
-			});
+      });
 
 
 
-	});
+  });
 
 function battleOne() {
 
 
-	$("#char1 p").text("HP " + (khajiit.hp - dragon.counterAttack));
+  $("#char1 p").text("HP " + (khajiit.hp - dragon.counterAttack));
       var losingGuess = khajiit.hp = (khajiit.hp - dragon.counterAttack);
     $("#char2 p").text("HP " + (dragon.hp - khajiit.counterAttack));
                          dragon.hp = (dragon.hp - khajiit.counterAttack);
 
      if ($("#char1").is(character1)) {
                     
-        	 $(".battleStats").text("You attacked dragon for " + (khajiit.attackPower)++ *4  + " damage. Dragon attacked you back for " + dragon.counterAttack + " damage");
+           $(".battleStats").text("You attacked dragon for " + (khajiit.attackPower)++ *4  + " damage. Dragon attacked you back for " + dragon.counterAttack + " damage");
            
-    	}
+      }
 
     else  {
                 
              $(".battleStats").text("You attacked Khajiit for " + (dragon.attackPower)++ *6  + " damage. khajiit attacked you back for " + khajiit.counterAttack + " damage");
         
-    	}
+      }
 
 
     if (losingGuess <= 0 && $("#char1").is(character1)) { 
@@ -196,7 +196,7 @@ function battleOne() {
 
      else if (dragon.hp == 127) {
              $(".battleStats").text("You won! Choose another enemy.");
-             $("#myalert").alert("You Won! Choose another enemy!");
+             alert("You Won! Choose another enemy!");
              wins++
              $("#char3").addClass("rematch1");
              $("#char4").addClass("rematch");
@@ -209,7 +209,7 @@ function battleOne() {
 
 function battleTwo() {
 
-	console.log(character1);
+  console.log(character1);
 
                 $("#char1 p").text("HP " + (khajiit.hp - guy.counterAttack));
                  var losingGuess = khajiit.hp = (khajiit.hp-guy.counterAttack);
@@ -231,8 +231,8 @@ function battleTwo() {
 
 
                    if (losingGuess <= 0 && $("#char1").is(character1))  {
-                   		 $(".battleStats").text("YOU LOSE!! Click Restart to try again.");
-                     	alert("You Lost! Click restart!");
+                       $(".battleStats").text("YOU LOSE!! Click Restart to try again.");
+                      alert("You Lost! Click restart!");
                     
                         }
 
@@ -257,7 +257,7 @@ function battleTwo() {
 
 function battleThree() {
 
-	$("#char1 p").text("HP " + (khajiit.hp - assassin.counterAttack));
+  $("#char1 p").text("HP " + (khajiit.hp - assassin.counterAttack));
                var losingGuess =khajiit.hp = (khajiit.hp-assassin.counterAttack);
                $("#char4 p").text("HP " + (assassin.hp - khajiit.counterAttack));
                assassin.hp = (assassin.hp-khajiit.counterAttack); 
@@ -300,7 +300,7 @@ function battleThree() {
 
 
     function battleFour() {
-		console.log("battle4");
+    console.log("battle4");
 
                $("#char2 p").text("HP " + (dragon.hp - guy.counterAttack));
                dragon.hp = (dragon.hp-guy.counterAttack);
@@ -323,7 +323,7 @@ function battleThree() {
                   
                   if (losingGuess <= 0 && $("#char2").is(character1))  { 
 
-                  	 $(".battleStats").text("You won! Choose another enemy.");
+                     $(".battleStats").text("You won! Choose another enemy.");
                         alert("You Won! Choose another enemy!");
                      $("#char3").fadeOut();
                      fourthWin++
@@ -348,82 +348,82 @@ function battleThree() {
 };
 
 
-function battleFive() {
+// function battleFive() {
 
-               $("#char2 p").text("HP " + (dragon.hp - assassin.counterAttack));
-               dragon.hp = (dragon.hp-assassin.counterAttack);
-               $("#char4 p").text("HP " + (assassin.hp - dragon.counterAttack));
-               var losingGuess = assassin.hp = (assassin.hp-dragon.counterAttack);
+//                $("#char2 p").text("HP " + (dragon.hp - assassin.counterAttack));
+//                dragon.hp = (dragon.hp-assassin.counterAttack);
+//                $("#char4 p").text("HP " + (assassin.hp - dragon.counterAttack));
+//                var losingGuess = assassin.hp = (assassin.hp-dragon.counterAttack);
                  
-                 if ($("#char2").is(character1)) {
+//                  if ($("#char2").is(character1)) {
                     
-                    $(".battleStats").text("You attacked assassin for " + (dragon.attackPower)++ *6 + " damage. Assassin attacked you back for " + assassin.counterAttack + " damage");
+//                     $(".battleStats").text("You attacked assassin for " + (dragon.attackPower)++ *6 + " damage. Assassin attacked you back for " + assassin.counterAttack + " damage");
 
-                     }
+//                      }
 
-                 else  {
+//                  else  {
                 
-                        $(".battleStats").text("You attacked Dragon for " + (assassin.attackPower)++ *6 + " damage. Dragon attacked you back for " + dragon.counterAttack + " damage");
-                     }
+//                         $(".battleStats").text("You attacked Dragon for " + (assassin.attackPower)++ *6 + " damage. Dragon attacked you back for " + dragon.counterAttack + " damage");
+//                      }
 
-               if (losingGuess <= 0 && $("#char2").is(character1)) { 
+//                if (losingGuess <= 0 && $("#char2").is(character1)) { 
                                 
-                                  $(".battleStats").text("You won! Choose another enemy.");
-                        alert("You Won! Choose another enemy!");
-                       $("#char4").fadeOut();  
-                       fifthWin++
+//                                   $(".battleStats").text("You won! Choose another enemy.");
+//                         alert("You Won! Choose another enemy!");
+//                        $("#char4").fadeOut();  
+//                        fifthWin++
                        
 
-                        }
+//                         }
 
-                     else if (dragon.hp == 42) {
-                     $(".battleStats").text("YOU LOSE!! Click Restart to try again.");
-                        alert("You Lost! Click restart!");
+//                      else if (dragon.hp == 42) {
+//                      $(".battleStats").text("YOU LOSE!! Click Restart to try again.");
+//                         alert("You Lost! Click restart!");
 
-                       }
+//                        }
 
 
 
-};
+// };
 
-function battleSix() {
+// function battleSix() {
 
-               $("#char3 p").text("HP " + (guy.hp - assassin.counterAttack));
-               var losingGuess = guy.hp = (guy.hp-assassin.counterAttack);
-               $("#char4 p").text("HP " + (assassin.hp - guy.counterAttack));
-               assassin.hp = (assassin.hp-guy.counterAttack);
+//                $("#char3 p").text("HP " + (guy.hp - assassin.counterAttack));
+//                var losingGuess = guy.hp = (guy.hp-assassin.counterAttack);
+//                $("#char4 p").text("HP " + (assassin.hp - guy.counterAttack));
+//                assassin.hp = (assassin.hp-guy.counterAttack);
                  
-                 if ($("#char3").is(character1)) {
+//                  if ($("#char3").is(character1)) {
                     
-                    $(".battleStats").text("You attacked assassin for " + (guy.attackPower)++ *2 + " damage. Assassin attacked you back for " + assassin.counterAttack + " damage");
+//                     $(".battleStats").text("You attacked assassin for " + (guy.attackPower)++ *2 + " damage. Assassin attacked you back for " + assassin.counterAttack + " damage");
 
-                     }
+//                      }
 
-                 else  {
+//                  else  {
                 
-                        $(".battleStats").text("You attacked some fuggin dude for " + (assassin.attackPower)++ *10 + " damage. Some fuggin dude attacked you back for " + guy.counterAttack + " damage");
-                     }
+//                         $(".battleStats").text("You attacked some fuggin dude for " + (assassin.attackPower)++ *10 + " damage. Some fuggin dude attacked you back for " + guy.counterAttack + " damage");
+//                      }
 
 
 
 
-                if (losingGuess <= 0 && ($("#char3").is(character1))) { 
+//                 if (losingGuess <= 0 && ($("#char3").is(character1))) { 
                                 
                                     
-                        $(".battleStats").text("YOU LOSE!! Click Restart to try again.");
-                        alert("You Lost! Click restart!");
+//                         $(".battleStats").text("YOU LOSE!! Click Restart to try again.");
+//                         alert("You Lost! Click restart!");
 
-                        }
+//                         }
 
-                    else if (assassin.hp == 27) {
-                      $(".battleStats").text("You won! Choose another enemy.");
-                        alert("You Won! Choose another enemy!");
-                      $("#char3").fadeOut();
-                      winSix++
+//                     else if (assassin.hp == 27) {
+//                       $(".battleStats").text("You won! Choose another enemy.");
+//                         alert("You Won! Choose another enemy!");
+//                       $("#char3").fadeOut();
+//                       winSix++
 
-                      }
+//                       }
 
-};
+// };
 
 });
 
@@ -477,7 +477,7 @@ function rematch() {
 
 $(".rematch1").click(function() {
 
-	$('.battleButton').on("click", function() {
+  $('.battleButton').on("click", function() {
         // if (dragon.hp === 127 && $(".rematch").has(guy)) {
        console.log("trying to work")
         
@@ -506,7 +506,7 @@ $(".rematch1").click(function() {
 
 $(".rematch").click(function() {
 
-	$('.battleButton').on("click", function() {
+  $('.battleButton').on("click", function() {
         if (dragon.hp === 127) {
      
         
@@ -538,7 +538,7 @@ function rematch2() {
  
  $(".rematch2").click(function() {
 
-	$('.battleButton').on("click", function() {
+  $('.battleButton').on("click", function() {
      
         
         $("#char3 p").text("HP " + (guy.hp - dragon.counterAttack));
@@ -552,7 +552,7 @@ function rematch2() {
 
 
          if (guyLoser <= 0) {
-         	$(".battleStats").text("That was quick! Click restart to try again.");
+          $(".battleStats").text("That was quick! Click restart to try again.");
                         alert("That was quick! The dragon cannot be tamed! Click restart!");
          }
 
@@ -565,7 +565,7 @@ function rematch2() {
 
 $(".rematch22").click(function() {
 
-	$('.battleButton').on("click", function() {
+  $('.battleButton').on("click", function() {
         
      
         
@@ -598,9 +598,9 @@ console.log(assassin.hp);
 
 function rematch3() {
 
-	$(".rematch33").click(function() {
+  $(".rematch33").click(function() {
 
-	       $('.battleButton').on("click", function() {
+         $('.battleButton').on("click", function() {
 
  
             
@@ -619,7 +619,7 @@ function rematch3() {
 console.log(assassin.hp);
          if (assassin.hp === 57) {
 
-         	$(".battleStats").text("You've grown in strength! Choose another enemy.");
+          $(".battleStats").text("You've grown in strength! Choose another enemy.");
                      alert("You've grown in strength! Choose another enemy!");
                  
 
@@ -640,11 +640,11 @@ console.log(assassin.hp);
     });
 
 
-	$(".rematch3").click(function(event) {
+  $(".rematch3").click(function(event) {
 
-		event.stopPropagation();
+    event.stopPropagation();
 
-	       $('.battleButton').on("click", function(event) {
+         $('.battleButton').on("click", function(event) {
 event.stopPropagation();
  
             
@@ -663,7 +663,7 @@ event.stopPropagation();
 
          if (assassin.hp === 22) {
 
-         	$(".battleStats").text("You won!");
+          $(".battleStats").text("You won!");
                     alert("You won!");
 
                   $("#char2").fadeOut();
@@ -680,7 +680,7 @@ event.stopPropagation();
 
     });
 
-	   });
+     });
 
 
 };
@@ -695,13 +695,13 @@ event.stopPropagation();
 function finals() {
 
 
-	console.log("finals tester");
+  console.log("finals tester");
 
 $(".final").click(function(event) {
 
-		event.stopPropagation();
+    event.stopPropagation();
 
-	       $('.battleButton').on("click", function(event) {
+         $('.battleButton').on("click", function(event) {
 event.stopPropagation();
  
             
@@ -722,7 +722,7 @@ if (anotherWin===1) {
             
   if (dragon.hp < 0) {
 
-  		$(".battleStats").text("You won! GAME OVER!!");
+      $(".battleStats").text("You won! GAME OVER!!");
                     alert("You won!");
 
                   $("#char2").fadeOut();
@@ -737,14 +737,14 @@ if (anotherWin===1) {
 
 });
 
-	   });
+     });
 
 
 
 $(".final2").click(function(event) {
 
  event.stopPropagation();
-	       $('.battleButton').on("click", function(event) {
+         $('.battleButton').on("click", function(event) {
 
  event.stopPropagation()
             
@@ -786,47 +786,47 @@ $(".final2").click(function(event) {
 
 
 
-function rematch4 () {
+// function rematch4 () {
 
 
 
-console.log("rematch4 working");
+// console.log("rematch4 working");
 
 
-$(".rematch4").click(function() {
+// $(".rematch4").click(function() {
 
-	$('.battleButton').on("click", function() {
+//  $('.battleButton').on("click", function() {
 
-		if (dragon.hp === 62) {
+//    if (dragon.hp === 62) {
         
-       console.log("trying to work")
+//        console.log("trying to work")
         
-        $("#char2 p").text("HP " + (dragon.hp - khajiit.counterAttack));
-             khajiit.hp = (khajiit.hp-dragon.counterAttack);
+//         $("#char2 p").text("HP " + (dragon.hp - khajiit.counterAttack));
+//              khajiit.hp = (khajiit.hp-dragon.counterAttack);
             
-             $(".battleStats").text("You attacked some dude for " + (dragon.attackPower)++ *4 + " damage. Some dude attacked you back for " + guy.counterAttack + " damage");
+//              $(".battleStats").text("You attacked some dude for " + (dragon.attackPower)++ *4 + " damage. Some dude attacked you back for " + guy.counterAttack + " damage");
 
              
-        $("#char1 p").text("HP " + (khajiit.hp - dragon.attackPower *6));
-                   var nextLoser =khajiit.hp = (khajiit.hp-dragon.attackPower * 6);
+//         $("#char1 p").text("HP " + (khajiit.hp - dragon.attackPower *6));
+//                    var nextLoser =khajiit.hp = (khajiit.hp-dragon.attackPower * 6);
 
 
-          if (dragon.hp == -23) {
-                $(".battleStats").text("You both killed each other!! Click Restart to try again.");
-                        alert("You both died!! Click restart!");
+//           if (dragon.hp == -23) {
+//                 $(".battleStats").text("You both killed each other!! Click Restart to try again.");
+//                         alert("You both died!! Click restart!");
 
-                   $("#char3").removeClass("rematch1");
-           } 
+//                    $("#char3").removeClass("rematch1");
+//            } 
 
-}
+// }
   
-          });                    
+//           });                    
 
-      });
+//       });
 
 // $(".rematch44").click(function() {
 
-// 	$('.battleButton').on("click", function() {
+//  $('.battleButton').on("click", function() {
 //         if (dragon.hp === 127) {
      
         
@@ -851,23 +851,20 @@ $(".rematch4").click(function() {
 
 //       });
 
+// // };
 // };
-};
 
 
-function rematch5 () {
-console.log("rematch5 working");
-};
+// function rematch5 () {
+// console.log("rematch5 working");
+// };
 
-function rematch6 () {
-console.log("rematch6 working");
-};
+// function rematch6 () {
+// console.log("rematch6 working");
+// };
 
 //end
 
 });
-
-
-
 
 
